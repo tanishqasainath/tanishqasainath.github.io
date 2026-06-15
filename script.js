@@ -1,10 +1,6 @@
-/* ============================================
-   TANISHQA S — Scripts
-   ============================================ */
-
 document.addEventListener('DOMContentLoaded', () => {
 
-  // --- Smooth scroll for nav links ---
+  // --- Smooth scroll for anchor links ---
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       const target = document.querySelector(link.getAttribute('href'));
@@ -21,19 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const updateNav = () => {
     const heroBottom = hero.offsetTop + hero.offsetHeight;
-    if (window.scrollY > heroBottom - 100) {
-      nav.classList.add('nav-scrolled');
-    } else {
-      nav.classList.remove('nav-scrolled');
-    }
+    nav.classList.toggle('nav-solid', window.scrollY > heroBottom - 100);
   };
 
   window.addEventListener('scroll', updateNav, { passive: true });
   updateNav();
 
-  // --- Reveal animations (Intersection Observer) ---
-  const revealElements = document.querySelectorAll('.reveal');
-
+  // --- Reveal animations ---
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
@@ -43,49 +33,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     },
-    {
-      threshold: 0.1,
-      rootMargin: '0px 0px -40px 0px',
-    }
+    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
   );
 
-  revealElements.forEach(el => observer.observe(el));
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
   // --- Reveal hero elements immediately ---
   document.querySelectorAll('.hero .reveal').forEach(el => {
-    setTimeout(() => el.classList.add('visible'), 100);
+    setTimeout(() => el.classList.add('visible'), 80);
   });
 
   // --- Footer year ---
   const yearEl = document.querySelector('.footer-year');
-  if (yearEl) {
-    yearEl.textContent = `© ${new Date().getFullYear()}`;
-  }
-
-  // --- Parallax effect on hero ornaments ---
-  const ornaments = document.querySelectorAll('.hero-ornament');
-  if (ornaments.length && window.innerWidth > 768) {
-    window.addEventListener('scroll', () => {
-      const scrolled = window.scrollY;
-      ornaments.forEach((orn, i) => {
-        const speed = i === 0 ? 0.05 : 0.03;
-        orn.style.transform = `translate(${scrolled * speed * 0.5}px, ${scrolled * speed * -1}px)`;
-      });
-    }, { passive: true });
-  }
-
-  // --- Smooth section number reveal on hover ---
-  document.querySelectorAll('.section-header').forEach(header => {
-    const number = header.querySelector('.section-number');
-    if (number) {
-      header.addEventListener('mouseenter', () => {
-        number.style.color = 'var(--color-accent-dark)';
-      });
-      header.addEventListener('mouseleave', () => {
-        number.style.color = '';
-      });
-    }
-  });
-
-  console.log('🌸 Tanishqa — site ready');
+  if (yearEl) yearEl.textContent = `© ${new Date().getFullYear()}`;
 });

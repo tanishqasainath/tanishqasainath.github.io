@@ -8,281 +8,371 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="noise-overlay"></div>
 
   <!-- Navigation -->
-  <nav class="nav">
+  <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">T</a>
+      <a href="#" class="nav-logo">TS</a>
       <div class="nav-links">
-        <a href="#about">About</a>
+        <a href="#profile">Profile</a>
         <a href="#experience">Experience</a>
-        <a href="#beyond">Beyond</a>
-        <a href="#contact">Connect</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
       </div>
+      <a href="resumes/current/Tanishqa_S_Resume_Legal.pdf" class="nav-resume" target="_blank" rel="noopener">Resume</a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero" id="hero">
     <div class="hero-bg">
-      <div class="hero-gradient"></div>
-      <div class="hero-ornament hero-ornament-1"></div>
-      <div class="hero-ornament hero-ornament-2"></div>
+      <div class="hero-pattern"></div>
+      <div class="hero-accent-line"></div>
     </div>
     <div class="hero-content">
-      <span class="hero-greeting reveal">Tanishqa S</span>
-      <h1 class="hero-name reveal" data-delay="200">
-        <span class="name-line">Compliance &amp;</span>
-        <span class="name-line name-line-last">Corporate Law</span>
+      <span class="hero-label reveal">Tanishqa S</span>
+      <h1 class="hero-title reveal" data-delay="150">
+        Compliance &amp; Corporate<br />
+        <span class="hero-title-accent">Legal Professional</span>
       </h1>
-      <p class="hero-subtitle reveal" data-delay="400">BA LLB &mdash; navigating regulation with clarity and purpose</p>
-      <div class="hero-actions reveal" data-delay="600">
-        <a href="#experience" class="btn btn-primary">See my work</a>
-        <a href="#contact" class="btn btn-outline">Get in touch</a>
-      </div>
-    </div>
-    <div class="hero-scroll-indicator">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="section about" id="about">
-    <div class="section-header reveal">
-      <span class="section-number">01</span>
-      <h2 class="section-title">About Me</h2>
-    </div>
-    <div class="about-grid">
-      <div class="about-text reveal">
-        <p class="about-intro">
-          A BA LLB graduate with a passion for corporate law, compliance, and
-          making the complex feel simple.
-        </p>
-        <p>
-          I've worked across <strong>corporate compliance</strong>,
-          <strong>data privacy (DPDP Act)</strong>,
-          <strong>contract management</strong>, and
-          <strong>IP due diligence</strong>&mdash;helping organisations stay
-          on the right side of the law while moving fast. At
-          <strong>Witmer.AI</strong> and <strong>USDC Global</strong>,
-          I built compliance frameworks that scaled.
-        </p>
-        <p>
-          Based in <strong>Bengaluru</strong>, I bring a multi-disciplinary
-          perspective shaped by internships at <strong>Fox Mandal &amp;
-          Associates</strong> and the <strong>Global Fintech Summit</strong>.
-          I speak <strong>English, Hindi, Kannada, Marathi</strong>, and
-          basic <strong>Tamil</strong>.
-        </p>
-        <p>
-          Outside the office, you'll find me volunteering with
-          <strong>Sevayana Trust</strong>, writing poetry, at the cinema,
-          or behind a keyboard &mdash; I play percussion too.
-        </p>
-      </div>
-      <div class="about-image reveal" data-delay="200">
-        <div class="about-image-frame">
-          <div class="about-image-placeholder">
-            <span class="placeholder-initials">TS</span>
-          </div>
-        </div>
-        <div class="about-image-ornament"></div>
-      </div>
-    </div>
-    <div class="about-traits reveal">
-      <div class="trait">
-        <span class="trait-icon">✦</span>
-        <span class="trait-label">BA LLB</span>
-      </div>
-      <div class="trait">
-        <span class="trait-icon">◈</span>
-        <span class="trait-label">DPDP Act</span>
-      </div>
-      <div class="trait">
-        <span class="trait-icon">◇</span>
-        <span class="trait-label">Compliance</span>
-      </div>
-      <div class="trait">
-        <span class="trait-icon">○</span>
-        <span class="trait-label">Contract Law</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section class="section experience" id="experience">
-    <div class="section-header reveal">
-      <span class="section-number">02</span>
-      <h2 class="section-title">Experience</h2>
-    </div>
-
-    <div class="timeline">
-
-      <div class="timeline-item reveal">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-role">
-            <h3>Legal Associate &amp; Compliance Specialist</h3>
-            <span class="timeline-company">Witmer.AI</span>
-          </div>
-          <span class="timeline-date">Mar 2025 &ndash; Apr 2026</span>
-          <ul class="timeline-desc">
-            <li>Built and maintained compliance frameworks aligned with DPDP Act, IT Act, and industry standards</li>
-            <li>Managed contract lifecycle for MSAs, NDAs, and vendor agreements</li>
-            <li>Advised product and engineering teams on privacy-by-design and regulatory risk</li>
-            <li>Conducted IP due diligence and supported data breach response protocols</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal" data-delay="150">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-role">
-            <h3>Compliance Executive</h3>
-            <span class="timeline-company">USDC Global</span>
-          </div>
-          <span class="timeline-date">Prior to 2025</span>
-          <ul class="timeline-desc">
-            <li>Supported cross-border compliance operations and regulatory reporting</li>
-            <li>Assisted in client due diligence and KYC documentation</li>
-            <li>Drafted internal policy documents and compliance checklists</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal" data-delay="300">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-role">
-            <h3>Legal Intern</h3>
-            <span class="timeline-company">Fox Mandal &amp; Associates</span>
-          </div>
-          <span class="timeline-date">Internship</span>
-          <ul class="timeline-desc">
-            <li>Worked on corporate litigation and contract research</li>
-            <li>Assisted with legal documentation and case preparation</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal" data-delay="450">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-role">
-            <h3>Intern</h3>
-            <span class="timeline-company">Global Fintech Summit &amp; Expo</span>
-          </div>
-          <span class="timeline-date">Internship</span>
-          <ul class="timeline-desc">
-            <li>Supported event operations and stakeholder coordination</li>
-            <li>Gained exposure to fintech regulatory landscape</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Beyond Work Section -->
-  <section class="section beyond" id="beyond">
-    <div class="section-header reveal">
-      <span class="section-number">03</span>
-      <h2 class="section-title">Beyond the Brief</h2>
-    </div>
-
-    <div class="beyond-grid">
-
-      <div class="beyond-card reveal">
-        <div class="beyond-icon">
-          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M15 4L4 15l11 11L26 15 15 4z" />
-            <path d="M4 15h22" />
-            <path d="M15 4v22" />
-          </svg>
-        </div>
-        <h3 class="beyond-title">Psychology</h3>
-        <p class="beyond-desc">I read psychology to understand what drives people&mdash;it sharpens my negotiation, mediation, and client intuition.</p>
-      </div>
-
-      <div class="beyond-card reveal" data-delay="100">
-        <div class="beyond-icon">
-          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M12 4v32M28 4v32M4 12h32M4 28h32" />
-          </svg>
-        </div>
-        <h3 class="beyond-title">Poetry &amp; Cinema</h3>
-        <p class="beyond-desc">Words and frames tell stories the law can't. I write poetry and lose myself in films from every language.</p>
-      </div>
-
-      <div class="beyond-card reveal" data-delay="200">
-        <div class="beyond-icon">
-          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M20 4v32M4 20h32" />
-          </svg>
-        </div>
-        <h3 class="beyond-title">Music</h3>
-        <p class="beyond-desc">Keyboard and percussion are my outlet. Rhythm keeps me grounded between deadlines.</p>
-      </div>
-
-      <div class="beyond-card reveal" data-delay="300">
-        <div class="beyond-icon">
-          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M20 4C11 4 4 11 4 20s7 16 16 16 16-7 16-16S29 4 20 4z" />
-            <path d="M20 14v12M14 20h12" />
-          </svg>
-        </div>
-        <h3 class="beyond-title">Social Impact</h3>
-        <p class="beyond-desc">Volunteering with <strong>Sevayana Trust</strong> keeps me connected to community&mdash;where the law meets lived reality.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="section contact" id="contact">
-    <div class="section-header reveal">
-      <span class="section-number">04</span>
-      <h2 class="section-title">Let's Connect</h2>
-    </div>
-    <div class="contact-content reveal">
-      <p class="contact-text">
-        Whether it's a compliance role, a collaboration, or just to say hello &mdash;
-        I'd love to hear from you.
+      <p class="hero-sub reveal" data-delay="300">
+        BA LL.B. &mdash; navigating regulation with clarity, precision, and purpose.
+        Based in <strong>Bengaluru</strong>.
       </p>
-      <a href="mailto:tanishqasainath@gmail.com" class="contact-email">
-        <span class="contact-email-label">Say hello</span>
-        <span class="contact-email-address">tanishqasainath@gmail.com</span>
-      </a>
-      <div class="contact-socials">
-        <a href="https://www.linkedin.com/in/tanishqasainath" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="2" y="2" width="20" height="20" rx="4" />
-            <path d="M8 11v5" />
-            <path d="M8 8v0" />
-            <path d="M12 16v-5" />
-            <path d="M16 16v-3a2 2 0 00-4 0" />
-          </svg>
+      <div class="hero-actions reveal" data-delay="450">
+        <a href="#experience" class="btn btn-primary">View experience</a>
+        <a href="resumes/current/Tanishqa_S_Resume_Legal.pdf" class="btn btn-outline" target="_blank" rel="noopener">Download resume</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-bar"></div>
+    </div>
+  </section>
+
+  <!-- Profile -->
+  <section class="section profile" id="profile">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-num">01</span>
+        <h2 class="section-title">Profile</h2>
+      </div>
+      <div class="profile-grid">
+        <div class="profile-text reveal">
+          <p class="profile-lead">
+            BA LL.B. graduate and early-career legal professional focused on
+            <strong>corporate compliance, governance, data privacy, contracts,
+            fintech regulation, and IP due diligence</strong>.
+          </p>
+          <p>
+            I bring strong legal research, drafting, and contract review skills
+            combined with hands-on compliance execution across technology,
+            ed-tech, and legal-services environments. I've built compliance
+            frameworks from the ground up at <strong>Witmer.AI</strong>,
+            supported regulatory operations at <strong>USDC Global</strong>,
+            and interned at <strong>Fox Mandal &amp; Associates</strong> and
+            the <strong>Global Fintech Summit</strong>.
+          </p>
+          <p>
+            I approach every problem with intellectual curiosity, attention to
+            detail, and a genuine commitment to making the law work for people
+            and organisations alike.
+          </p>
+        </div>
+        <div class="profile-stats reveal" data-delay="150">
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Years legal experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Languages</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">6</span>
+            <span class="stat-label">Organisations</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">BA LL.B.</span>
+            <span class="stat-label">University Law College</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section experience" id="experience">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <h3>Legal Associate &amp; Compliance Specialist</h3>
+              <span class="tl-org">Witmer.AI</span>
+            </div>
+            <span class="tl-date">Bengaluru &middot; Mar 2025 &ndash; Apr 2026</span>
+            <ul class="tl-duties">
+              <li>Built compliance and governance structures aligning legal controls with product operations and DPDP Act, 2023 requirements</li>
+              <li>Drafted and negotiated MSAs and pilot contracts for enterprise clients &mdash; liability limits, performance indicators, consent/data-use controls</li>
+              <li>Reviewed 250+ organizational artifacts for copyright, confidentiality, data de-identification, and AI-related risk</li>
+              <li>Prepared an internal algorithmic-transparency policy; supported consent management, vendor risk checks, trademark protection, and quarterly data-storage audits</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal" data-delay="100">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <h3>Compliance Executive</h3>
+              <span class="tl-org">USDC Global</span>
+            </div>
+            <span class="tl-date">Bengaluru &middot; Dec 2024 &ndash; Feb 2025</span>
+            <ul class="tl-duties">
+              <li>Designed compliance strategies for international education and e-commerce operations</li>
+              <li>Standardized MSA documentation and supported compliance audits for university partner arrangements</li>
+              <li>Developed data privacy protocols for student learning platforms; supported cloud-security measures, automated compliance registries, and IP protection</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal" data-delay="200">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <h3>Corporate Legal Intern</h3>
+              <span class="tl-org">Fox Mandal, Solicitors &amp; Advocates</span>
+            </div>
+            <span class="tl-date">Bengaluru &middot; Oct 2024 &ndash; Nov 2024</span>
+            <ul class="tl-duties">
+              <li>Supported banking and finance vertical on transactional and compliance matters</li>
+              <li>Researched capital markets regulations, commercial law, customer due diligence, blockchain regulation, and corporate transparency frameworks</li>
+              <li>Assisted with strategy statements, slump-sale documentation, and overseas investment structures linked to ESOPs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal" data-delay="300">
+          <div class="tl-dot tl-dot-alt"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <h3>Research Assistant &amp; Legal Intern</h3>
+              <span class="tl-org">Global Fintech Summit &middot; G. Veerendra Babu Associates &middot; ELADO</span>
+            </div>
+            <span class="tl-date">Multiple &middot; 2022&ndash;2023</span>
+            <ul class="tl-duties">
+              <li>Conducted secondary research on fintech regulation and blockchain compliance for the Global Fintech Summit</li>
+              <li>Assisted with civil/commercial litigation, labour law, and arbitration at G. Veerendra Babu Associates</li>
+              <li>Performed IP due diligence, trademark conflict research, and shareholder agreement analysis at ELADO</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section skills" id="skills">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Core Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Corporate &amp; Compliance</h3>
+          <div class="skill-tags">
+            <span class="tag">Corporate governance</span>
+            <span class="tag">Contract drafting &amp; review</span>
+            <span class="tag">DPDP Act, 2023</span>
+            <span class="tag">Data privacy</span>
+            <span class="tag">Vendor risk audits</span>
+            <span class="tag">Policy audits</span>
+            <span class="tag">MSA negotiation</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal" data-delay="100">
+          <h3 class="skill-group-title">Research &amp; Transactions</h3>
+          <div class="skill-tags">
+            <span class="tag">Legal research &amp; drafting</span>
+            <span class="tag">Banking &amp; finance</span>
+            <span class="tag">Fintech regulation</span>
+            <span class="tag">Blockchain compliance</span>
+            <span class="tag">IP due diligence</span>
+            <span class="tag">Trademark conflict</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal" data-delay="200">
+          <h3 class="skill-group-title">Disputes &amp; Advisory</h3>
+          <div class="skill-tags">
+            <span class="tag">Arbitration support</span>
+            <span class="tag">Litigation support</span>
+            <span class="tag">Case preparation</span>
+            <span class="tag">Legal documentation</span>
+            <span class="tag">Algorithmic transparency</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal" data-delay="300">
+          <h3 class="skill-group-title">Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">English (professional)</span>
+            <span class="tag">Hindi (native)</span>
+            <span class="tag">Kannada (native)</span>
+            <span class="tag">Marathi (native)</span>
+            <span class="tag">Tamil (basic)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section education" id="education">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="edu-list reveal">
+        <div class="edu-item">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <div class="edu-details">
+            <h3>B.A. LL.B.</h3>
+            <span class="edu-school">University Law College, Bengaluru</span>
+            <span class="edu-year">2018 &ndash; 2024</span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <div class="edu-details">
+            <h3>Pre-University</h3>
+            <span class="edu-school">Mount Carmel College, Bengaluru</span>
+            <span class="edu-year">2015 &ndash; 2017</span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="4" y="4" width="16" height="16" rx="2" />
+              <path d="M9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <div class="edu-details">
+            <h3>Legal Contract Drafting</h3>
+            <span class="edu-school">Certification</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-extra reveal" data-delay="150">
+        <h3 class="edu-extra-title">Community</h3>
+        <p class="edu-extra-text">
+          Legal aid volunteer, <strong>Sevayana Trust, Mysore</strong> &mdash; organised confidential
+          documents, coordinated referrals to legal experts, and supported legal literacy
+          and access-to-justice work.
+        </p>
+      </div>
+
+      <div class="edu-extra reveal" data-delay="250">
+        <h3 class="edu-extra-title">Beyond the law</h3>
+        <p class="edu-extra-text">
+          Psychology enthusiast, poet, cinema lover, and percussionist.
+          I believe the best legal minds are also the most human ones.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Get in touch</h2>
+      </div>
+
+      <div class="contact-grid reveal">
+        <a href="mailto:tanishqa.sainath@gmail.com" class="contact-card">
+          <span class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M22 4l-10 8L2 4" />
+            </svg>
+          </span>
+          <span class="contact-card-label">Email</span>
+          <span class="contact-card-value">tanishqa.sainath@gmail.com</span>
         </a>
-        <a href="#" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
-          </svg>
+        <a href="https://www.linkedin.com/in/tanishqasainath" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="4" />
+              <path d="M8 11v5" />
+              <path d="M8 8v0" />
+              <path d="M12 16v-5" />
+              <path d="M16 16v-3a2 2 0 00-4 0" />
+            </svg>
+          </span>
+          <span class="contact-card-label">LinkedIn</span>
+          <span class="contact-card-value">/in/tanishqasainath</span>
+        </a>
+        <a href="resumes/current/Tanishqa_S_Resume_Legal.pdf" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+              <polyline points="10 9 9 9 8 9" />
+            </svg>
+          </span>
+          <span class="contact-card-label">Resume</span>
+          <span class="contact-card-value">Download PDF</span>
         </a>
       </div>
+
+      <p class="contact-note reveal" data-delay="200">
+        Available for compliance, corporate legal, and regulatory roles &mdash;
+        <a href="mailto:tanishqa.sainath@gmail.com">let's talk</a>.
+      </p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-inner">
-      <p class="footer-text">Tanishqa S &mdash; <span class="footer-heart">⚖</span> &mdash; Compliance &amp; Corporate Law</p>
-      <p class="footer-year"></p>
+      <span class="footer-name">Tanishqa S</span>
+      <span class="footer-tagline">Compliance &amp; Corporate Law</span>
+      <span class="footer-year"></span>
     </div>
   </footer>
 
