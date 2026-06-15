@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python/cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local agent/tooling files
+.pi/
+
+# Local generation scripts
+scripts/
+
+# Temporary Office files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Temporary/export files
+*.tmp
+*.temp
